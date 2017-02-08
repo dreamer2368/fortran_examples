@@ -1,0 +1,36 @@
+2000		Nt
+.05		dt
+
+200		Nx
+20.		Lx
+
+2.              wsig
+10.		Xw
+
+2.		sigx_c
+0.		x_c
+-8.		eps_c
+
+1.5		a_m
+2.              sig_m
+20.		t_m
+2.		sigx_m
+-10.		x_m
+
+0.01		mu
+0.01		muB
+0.01		kappa
+1.4		gamma
+
+0.0		a_ic
+-10.            X_ic
+
+7.		w_sponge
+5.		smax_sponge
+
+1		which_ic
+0		which_ica
+
+10		out_sol
+1               out_cost
+

@@ -1,0 +1,53 @@
+## Number of species
+Nspecies = 1
+# Initial number of particles per species
+N1 = 10000
+# N2 = 1000000
+# ...
+## Charge of species
+Q1 = -1.0
+# Q2 = 1.0
+# ...
+## Mass of species
+M1 = 1.0
+# M2 = 1836.0
+# ...
+
+## Length of the domain
+Length = 20.0
+## Number of grid points
+Ngrid = 512
+
+## Simulation time
+Time = 100.0
+## Time step
+TimeStep = 0.01
+
+## Particle BC : "Periodic", "Absorbing", "Refluxing"
+ParticleBC_Left = Periodic
+ParticleBC_Right = Periodic
+# set thermal velocity if refluxing boundary
+# vT_L = 1.0
+# vT_R = 1.0
+
+## Mesh BC : "Periodic", "Dirichlet", "Neumann"
+MeshBC_Left = Periodic
+MeshBC_Right = Periodic
+## If not periodic, must further specify circuit condition inside the code
+
+## Interpolation order: 1~2
+PM_order = 1
+
+## Physical parameters
+Debye = 1.0
+PlasmaFrequency = 1.0
+Permittivity = 1.0
+
+## Miscellaneous parameters (Real)
+Number_A = 2
+A1 = 1.0
+A2 = 30.0
+
+## comments2
+String_test = Hello
+Boolean_test = True
