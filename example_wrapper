@@ -1,0 +1,22 @@
+module example_wrapper
+  2 
+  3     use iso_c_binding, only: c_double
+  4     use example
+  5 
+  6     implicit none
+  7 
+  8 contains
+  9 
+ 10     subroutine c_example1(a,b,aplusb) bind(c)
+ 11         real(c_double), intent(in) :: a,b
+ 12         real(c_double), intent(out) :: aplusb
+ 13         call example1(a,b,aplusb)
+ 14     end subroutine
+ 15 
+ 16     subroutine c_exmple2(a,b,aprodb) bind(c)
+ 17         real(c_double), intent(in) :: a,b
+ 18         real(c_double), intent(out) :: aprodb
+ 19         call example2(a,b,aprodb)
+ 20     end subroutine
+ 21 
+ 22 end module
